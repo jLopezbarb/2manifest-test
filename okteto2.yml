@@ -1,0 +1,8 @@
+deploy:
+- kubectl apply -f k8s1.yml
+
+dev:
+  app:
+    command: bash
+    sync:
+      - .:/app
